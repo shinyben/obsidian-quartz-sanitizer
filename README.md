@@ -1,9 +1,12 @@
 # obsidian-quartz-sanitizer
+`As of Quartz 4, this is no longer necessary.`
+
 Given a directory of [Obsidian](https://obsidian.md/) notes, clones the directory into a [Quartz](https://github.com/jackyzha0/quartz)-compliant structure. Written because [the previous code](https://github.com/trojblue/Obsidian-wiki-fix) didn't handle `#` or `|` or spaces.
 
 Hugo, the back-end of Quartz, can't handle note names that include characters that are URL-unfriendly, including spaces and emojis. This will, if given a Obsidian vault containing Wikilinked ( [[NOTE-NAME]] ) notes, generate a vault that is visually identical but Quartz-compliant.
 
 ## How to Use
+0. Make sure that you still want to use this, now that Quartz 4 does it natively 
 1. Make a backup of your Obsidian vault in case something breaks (unlikely)
 2. Don't forget step #1
 3. Edit IN_DIR to be full path to the input Obsidian directory
